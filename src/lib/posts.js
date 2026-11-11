@@ -14,7 +14,3 @@ export const posts = Object.entries(modules)
 export function getPost(slug) {
   return posts.find((post) => post.slug === slug)
 }
-
-export function getPostsByTopic(topicSlug) {
-  return posts.filter((post) => post.topic === topicSlug)
-}
