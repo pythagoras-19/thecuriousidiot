@@ -81,7 +81,11 @@ figcaption {
   margin-top: 0.5rem;
 }
 
-[data-rehype-pretty-code-fragment] pre {
+[data-rehype-pretty-code-figure] {
+  text-align: left;
+}
+
+[data-rehype-pretty-code-figure] pre {
   padding: 1rem 1.25rem;
   border-radius: 6px;
   overflow-x: auto;
@@ -89,6 +93,6 @@ figcaption {
   line-height: 1.5;
 }
 
-[data-rehype-pretty-code-fragment] code {
+[data-rehype-pretty-code-figure] code {
   display: grid;
 }
