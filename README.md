@@ -9,7 +9,7 @@ Lives at `stderr.mattdchristiansen.com`.
 - [Vite](https://vite.dev/) + React
 - [MDX](https://mdxjs.com/) for posts (`src/posts/*.mdx`) — plain Markdown, with the option to drop in React components inline
 - [remark-math](https://github.com/remarkjs/remark-math) + [KaTeX](https://katex.org/) for math (`$inline$` and `$$block$$`)
-- [rehype-pretty-code](https://rehype-pretty-code.netlify.app/) (Shiki, Dracula theme) for syntax-highlighted code blocks
+- [rehype-pretty-code](https://rehype-pretty-code.netlify.app/) (Shiki, Gruvbox Dark Hard theme) for syntax-highlighted code blocks
 - [latex.css](https://latex.css) (forced dark mode) for the look
 
 ## Writing a post

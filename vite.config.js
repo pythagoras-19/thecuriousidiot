@@ -14,7 +14,7 @@ export default defineConfig({
       remarkPlugins: [remarkFrontmatter, remarkMdxFrontmatter, remarkMath],
       rehypePlugins: [
         rehypeKatex,
-        [rehypePrettyCode, { theme: 'dracula', keepBackground: true }],
+        [rehypePrettyCode, { theme: 'gruvbox-dark-hard', keepBackground: true }],
       ],
     }),
     react(),
