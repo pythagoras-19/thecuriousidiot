@@ -1,0 +1,43 @@
+---
+title: Hello, Journal
+date: 2026-11-10
+description: A first post showing off markdown, math, code, and a diagram.
+---
+
+This is a plain **Markdown** post, written as an `.mdx` file. Regular prose
+works exactly like you'd expect, with *emphasis*, `inline code`, and
+[links](https://example.com).
+
+## Math
+
+Inline math like $E = mc^2$ renders with KaTeX, and so do block equations:
+
+$$
+\frac{\partial u}{\partial t} = \alpha \nabla^2 u
+$$
+
+## Code
+
+Fenced code blocks get syntax highlighting automatically, by language:
+
+```python
+def fib(n):
+    a, b = 0, 1
+    for _ in range(n):
+        a, b = b, a + b
+    return a
+```
+
+## Diagrams and images
+
+Drop in a plain image or an exported diagram the same way:
+
+![A simple input/process/output diagram](/images/example-diagram.svg)
+
+Because this is MDX, you can also reach for an actual React component
+inline whenever a static image isn't enough — an interactive chart, a
+hand-rolled SVG, an embed — right in the middle of a post.
+
+## Blockquotes
+
+> Note that you can use *markdown syntax* within a blockquote.

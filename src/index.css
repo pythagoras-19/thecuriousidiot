@@ -1,0 +1,98 @@
+@import 'latex.css/style.css';
+@import 'katex/dist/katex.min.css';
+
+body {
+  margin: 0;
+}
+
+.journal-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+}
+
+.journal-shell main {
+  flex: 1;
+}
+
+.journal-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: var(--border-width-thin) solid var(--footnotes-border-color);
+}
+
+.journal-title {
+  font-family: 'Latin Modern Roman', 'CMU Serif', Georgia, serif;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+.journal-header nav a {
+  margin-left: 1.2rem;
+}
+
+.journal-footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: var(--border-width-thin) solid var(--footnotes-border-color);
+  font-size: 0.85rem;
+  opacity: 0.75;
+  text-align: center;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-list li {
+  margin-bottom: 1.75rem;
+}
+
+.post-list li p {
+  margin: 0.25rem 0 0;
+}
+
+.post-date {
+  display: block;
+  font-size: 0.85rem;
+  opacity: 0.7;
+  margin-top: 0.15rem;
+}
+
+article > .post-date {
+  margin-bottom: 1.5rem;
+}
+
+figure {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+figure img,
+article img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+figcaption {
+  font-size: 0.85rem;
+  opacity: 0.75;
+  margin-top: 0.5rem;
+}
+
+[data-rehype-pretty-code-fragment] pre {
+  padding: 1rem 1.25rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+[data-rehype-pretty-code-fragment] code {
+  display: grid;
+}
