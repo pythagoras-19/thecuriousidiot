@@ -13,7 +13,7 @@ export default function Layout({ children }) {
       </header>
       <main>{children}</main>
       <footer className="journal-footer">
-        <p>Written by Matt Christiansen.</p>
+        <p>Written by Null Johnson.</p>
       </footer>
     </div>
   )
