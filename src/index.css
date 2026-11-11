@@ -1,10 +1,6 @@
 @import 'latex.css/style.css';
 @import 'katex/dist/katex.min.css';
 
-body {
-  margin: 0;
-}
-
 .journal-shell {
   display: flex;
   flex-direction: column;
