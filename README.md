@@ -1,16 +1,42 @@
-# React + Vite
+# the curious idiot
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A personal learnings journal. Markdown posts with LaTeX math and syntax-highlighted code, styled to look like a rendered LaTeX document.
 
-Currently, two official plugins are available:
+Lives at `stderr.mattdchristiansen.com`.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Stack
 
-## React Compiler
+- [Vite](https://vite.dev/) + React
+- [MDX](https://mdxjs.com/) for posts (`src/posts/*.mdx`) — plain Markdown, with the option to drop in React components inline
+- [remark-math](https://github.com/remarkjs/remark-math) + [KaTeX](https://katex.org/) for math (`$inline$` and `$$block$$`)
+- [rehype-pretty-code](https://rehype-pretty-code.netlify.app/) (Shiki, Dracula theme) for syntax-highlighted code blocks
+- [latex.css](https://latex.css) (forced dark mode) for the look
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Writing a post
 
-## Expanding the Oxlint configuration
+Add a new `.mdx` file to `src/posts/` with frontmatter:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```md
+---
+title: Post Title
+date: 2026-01-01
+description: One line for the post list.
+---
+
+Your content here.
+```
+
+It'll automatically show up on the home page, sorted by date.
+
+## Development
+
+```bash
+npm install
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+```
