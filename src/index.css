@@ -12,12 +12,7 @@
 }
 
 .journal-header {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 1rem;
   padding-bottom: 1rem;
-  margin-bottom: 2rem;
   border-bottom: var(--border-width-thin) solid var(--footnotes-border-color);
 }
 
@@ -27,8 +22,13 @@
   text-decoration: none;
 }
 
-.journal-header nav a {
-  margin-left: 1.2rem;
+.journal-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.2rem;
+  font-size: 0.9rem;
+  padding-top: 0.6rem;
+  margin-bottom: 2rem;
 }
 
 .journal-footer {

@@ -21,12 +21,20 @@ Add a new `.mdx` file to `src/posts/` with frontmatter:
 title: Post Title
 date: 2026-01-01
 description: One line for the post list.
+topic: raw-learnings
 ---
 
 Your content here.
 ```
 
 It'll automatically show up on the home page, sorted by date.
+
+`topic` must match one of the slugs in [`src/lib/topics.js`](src/lib/topics.js):
+
+- `ai-workflow-automation` — AI & Workflow Automation
+- `real-time-communication` — Real-Time Communication
+
+Posts tagged with a topic also show up on that topic's page, linked from the header nav.
 
 ## Development
 
